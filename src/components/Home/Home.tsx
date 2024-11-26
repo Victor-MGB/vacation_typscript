@@ -58,9 +58,9 @@ const Home: React.FC<ImageCarouselProps> = ({ images }) => {
       {/* Main Content - Right Side */}
       <div className="absolute left-8 bottom-[10rem] w-[30rem] flex flex-col items-center text-white">
         <h1 className="text-2xl font-extrabold leading-tight mb-2">Feel The Experience</h1>
-        <p className="text-4xl ml-[5rem] mb-6">Explore The Majestic Asia Landscape Now</p>
+        <p className="text-4xl ml-[5rem] hidden mb-6">Explore The Majestic Asia Landscape Now</p>
         <button
-          className="flex items-center space-x-2 bg-gradient-to-r from-blue-500 to-indigo-600 px-5 py-3 rounded-lg text-lg font-semibold shadow-lg transform hover:scale-105 transition-transform"
+          className="flex items-center hidden space-x-2 bg-gradient-to-r from-blue-500 to-indigo-600 px-5 py-3 rounded-lg text-lg font-semibold shadow-lg transform hover:scale-105 transition-transform"
           aria-label="Get Started"
         >
           <span>Get Started</span>
