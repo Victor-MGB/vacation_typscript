@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { CiLineHeight } from "react-icons/ci";
 import { FaChevronDown } from "react-icons/fa";
-import "../nav/Navbar.css"; // Custom CSS
-import "animate.css"; // Animation library
 import { NavLink } from "react-router-dom";
+import "../nav/Navbar.css"; // Custom CSS for additional styles
+import "animate.css"; // Animation library
 
 // Interface for Navigation Items
 interface NavItem {
@@ -146,7 +146,7 @@ const Navbar: React.FC = () => {
       <nav
         className={`${
           navOpen ? "block" : "hidden"
-        } md:hidden bg-white w-full px-4 pb-4`}
+        } md:hidden bg-white w-full px-4 pb-4 z-50`}
       >
         {navItems.map((item) => (
           <div key={item.name} className="block">
